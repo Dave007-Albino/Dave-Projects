@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome (ícones fas, fab, far etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>GiSsam - Computadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="logo">
+            <img src="imagens/logo.jpg" alt="">
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Pesquisar produtos...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+
+
+        <div class="menu-icons">
+            <!-- Botão Atendimento -->
+            <div class="support-btn" id="supportBtn">
+                <i class="fas fa-headset"></i>
+                <span>Atendimento</span>
+            </div>
+            <!-- MENU HAMBURGER -->
+            <div id="menuBtn" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- SIDEBAR DIREITA -->
+            <div id="sidebar" class="sidebar">
+                <ul>
+                    <hr>
+                    <li id="li_1"><a href="#" data-scroll="topo">Início</a></li>
+                    <li id="li_2"><a href="#" data-scroll="produtos">Produtos</a></li>
+                    <li id="li_3"><a href="#" data-scroll="footer">Contactos</a></li>
+                </ul>
+            </div>
+
+            <!-- Janelinha do WhatsApp -->
+            <div class="whatsapp-box" id="whatsappBox">
+                <a href="https://wa.me/244937159966" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp: <strong>+244 937159966</strong></p>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="bubble-whatsapp" id="bubble-whatsapp">
+        <a href="https://wa.me/244937159966" target="_blank">
+        <button><i class="fab fa-whatsapp"></i></button>
+        </a>
+    </div>
+
+    <section id="main-content">
+
+        <!-- Container de resultados da busca -->
+        <div id="products-container" class="products-container"></div>
+
+        <!-- ===== BLOCO DE CONTAINERS ===== -->
+        <section class="info-containers">
+
+            <!-- 3️⃣ Container com Vídeo -->
+            <div class="info-box video-box">
+                <div class="info-content">
+                    <h3>Conheça o Nosso Melhor Produto</h3>
+                </div>
+                <video autoplay muted loop src="imagens/2022 Nitro 5  Gaming Laptop  Acer - Acer (1080p, h264).mp4"
+                    class="promo-video">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </div>
+            <!-- 2️⃣ Container Integridade e Eficiência -->
+            <div class="info-box integrity-box">
+                <div class="info-content">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Eficiência e Confiança</h3>
+                    <p>Na Guisam Tecnologia, priorizamos a qualidade e a integridade.<br>Cada produto é cuidadosamente
+                        testado
+                        e garantido.</p>
+                    <p>Com anos de experiência no mercado, somos referência em tecnologia e compromisso com o cliente.
+                    </p>
+                </div>
+            </div>
+            <!-- 1️⃣ Container WhatsApp -->
+            <div class="info-box whatsapp-box-container">
+                <div class="info-content">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Atendimento Rápido</h3>
+                    <p>Precisa de ajuda? Fale conosco diretamente pelo WhatsApp e receba suporte personalizado.</p>
+                    <a href="https://wa.me/244937159966" target="_blank" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+        <div style="margin-left: 120px; margin-top: 20px; font-size: larger;">
+            <h1><b>Catálogo</b></h1>
+        </div>
+
+        <!-- PRODUTOS -->
+        <section id="produtos" class="produtos-container">
+
+
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="imagens/pc desktop.jpg">
+                <h2>Computador Gamer Ryzen 5</h2>
+
+                <p class="preco-antigo">Kz 550,000.00</p>
+                <span class="desconto">Poupa 20%</span>
+                <p class="preco">Kz 440,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+
+            <div class="card" data-name="PC Intel Core i7 10ª Gen">
+                <img src="imagens/mouse gamer.webp">
+                <h2>PC Intel Core i7 10ª Gen</h2>
+
+                <p class="preco-antigo">Kz 690,000.00</p>
+                <span class="desconto">Poupa 25%</span>
+                <p class="preco">Kz 517,500.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+
+            <div class="card" data-name="Workstation Xeon Pro">
+                <img src="imagens/Monitor.jpg" alt="Computador">
+                <h2>Workstation Xeon Pro</h2>
+
+                <p class="preco-antigo">Kz 1,200,000.00</p>
+                <span class="desconto">Poupa 30%</span>
+                <p class="preco">Kz 840,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="imagens/pc dell.jpg" alt="Computador">
+                <h2>Workstation Xeon Pro</h2>
+
+                <p class="preco-antigo">Kz 1,200,000.00</p>
+                <span class="desconto">Poupa 30%</span>
+                <p class="preco">Kz 840,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>Workstation Xeon Pro</h2>
+
+                <p class="preco-antigo">Kz 1,200,000.00</p>
+                <span class="desconto">Poupa 30%</span>
+                <p class="preco">Kz 840,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>Computador Gamer Ryzen 5</h2>
+
+                <p class="preco-antigo">Kz 550,000.00</p>
+                <span class="desconto">Poupa 20%</span>
+                <p class="preco">Kz 440,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>PC Intel Core i7 10ª Gen</h2>
+
+                <p class="preco-antigo">Kz 690,000.00</p>
+                <span class="desconto">Poupa 25%</span>
+                <p class="preco">Kz 517,500.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>Workstation Xeon Pro</h2>
+
+                <p class="preco-antigo">Kz 1,200,000.00</p>
+                <span class="desconto">Poupa 30%</span>
+                <p class="preco">Kz 840,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>Workstation Xeon Pro</h2>
+
+                <p class="preco-antigo">Kz 1,200,000.00</p>
+                <span class="desconto">Poupa 30%</span>
+                <p class="preco">Kz 840,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>Workstation Xeon Pro</h2>
+
+                <p class="preco-antigo">Kz 1,200,000.00</p>
+                <span class="desconto">Poupa 30%</span>
+                <p class="preco">Kz 840,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>Computador Gamer Ryzen 5</h2>
+
+                <p class="preco-antigo">Kz 550,000.00</p>
+                <span class="desconto">Poupa 20%</span>
+                <p class="preco">Kz 440,000.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+
+            <div class="card" data-name="Computador Gamer Ryzen 5">
+                <img src="assets/img/pc1.jpeg" alt="Computador">
+                <h2>PC Intel Core i7 10ª Gen</h2>
+
+                <p class="preco-antigo">Kz 690,000.00</p>
+                <span class="desconto">Poupa 25%</span>
+                <p class="preco">Kz 517,500.00</p>
+
+                <a href="#" class="detalhes">Ver detalhes</a>
+            </div>
+
+        </section>
+
+
+        <section class="main-section">
+            <!-- ===== CARROSSEL (HTML) ===== -->
+            <section class="carousel-section">
+                <h2>Maquinas de Empresas de renome!</h2>
+
+                <div class="carousel-container" id="carouselContainer">
+                    <!-- Botão voltar -->
+                    <button class="carousel-btn prev-btn">❮</button>
+                    <div class="carousel-track" id="carousel">
+
+                        <div class="product-card">
+                            <img src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div class="product-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9k5g6IfC-_OnfiKfolLXAtzBs7QGrDitR5w&s"
+                                alt="HP Probook">
+                        </div>
+                        <div class="product-card">
+                            <img src="data:image/png;base64,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"
+                                alt="Produto 3">
+                        </div>
+                        <div class="product-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVBLprYq5QGnZybGzG-dek531-0FgU0Rbv26Txc-vD2g&s"
+                                alt="Produto 4">
+                        </div>
+
+                    </div>
+                    <!-- Botão avançar -->
+                    <button class="carousel-btn next-btn">❯</button>
+                </div>
+            </section>
+
+
+
+        </section>
+
+
+    </section>
+
+
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 GiSsam — Todos direitos reservados.</p>
+    <p>Contacto: 935 061 884</p>
+</footer>
+
+
+<script>
+    const supportBtn = document.getElementById('supportBtn');
+    const whatsappBox = document.getElementById('whatsappBox');
+
+    supportBtn.addEventListener('click', () => {
+        whatsappBox.classList.toggle('show');
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('carousel');
+        if (!track) return;
+
+        // 1) Duplica o conteúdo para continuidade
+        track.innerHTML += track.innerHTML;
+
+        // 2) Calcula a largura do "conteúdo original" (metade do scrollWidth após duplicar)
+        // Usamos setTimeout para garantir que o browser tenha renderizado os elementos
+        setTimeout(() => {
+            const fullWidth = track.scrollWidth;       // largura total após duplicar
+            const moveDistance = fullWidth / 2;        // distância a percorrer (apenas a primeira metade)
+
+            // 3) Define a duração (em segundos) desejada para percorrer moveDistance.
+            // Ajuste `speedSeconds` para controlar a velocidade: menor = mais rápido.
+            const speedSeconds = 10; // exemplo: 10s (mude para 6, 8, 12 conforme quiser)
+
+            // 4) Remove animação anterior se existir (para reconfigurar ao vivo)
+            const existingStyle = document.getElementById('carousel-animation-style');
+            if (existingStyle) existingStyle.remove();
+
+            // 5) Cria uma regra @keyframes dinâmica que move exatamente -moveDistance px
+            const styleEl = document.createElement('style');
+            styleEl.id = 'carousel-animation-style';
+            styleEl.innerHTML = `
+      @keyframes scrollDynamic {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-${moveDistance}px); }
+      }
+      /* aplica a animação ao track */
+      #carousel {
+        animation: scrollDynamic ${speedSeconds}s linear infinite;
+        will-change: transform;
+      }
+    `;
+            document.head.appendChild(styleEl);
+
+            // 6) (Opcional) tornar pausa ao hover também aplicável no container
+            const container = document.getElementById('carouselContainer');
+            if (container) {
+                container.addEventListener('mouseenter', () => {
+                    track.style.animationPlayState = 'paused';
+                });
+                container.addEventListener('mouseleave', () => {
+                    track.style.animationPlayState = 'running';
+                });
+            }
+        }, 50); // pequeno delay para assegurar renderização
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('carousel');
+        const container = document.getElementById('carouselContainer');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        let cards = Array.from(track.querySelectorAll('.product-card'));
+        if (cards.length === 0) return;
+
+        let currentIndex = 0;
+        const total = cards.length;
+
+        // função que centraliza um card pelo índice
+        function scrollToCard(index) {
+            cards = Array.from(track.querySelectorAll('.product-card')); // atualiza lista se dinâmico
+            const card = cards[index];
+            if (!card) return;
+            const offset = card.offsetLeft - (track.clientWidth / 2 - card.clientWidth / 2);
+            track.scrollTo({ left: offset, behavior: 'smooth' });
+        }
+
+        // tenta sincronizar currentIndex com scroll manual: escolhe o card mais próximo do centro
+        function updateIndexByScroll() {
+            const trackCenter = track.scrollLeft + track.clientWidth / 2;
+            let closest = 0;
+            let minDist = Infinity;
+            cards.forEach((c, i) => {
+                const cCenter = c.offsetLeft + c.clientWidth / 2;
+                const dist = Math.abs(trackCenter - cCenter);
+                if (dist < minDist) { minDist = dist; closest = i; }
+            });
+            currentIndex = closest;
+        }
+
+        // adicionar debounced listener para scroll (para evitar muitas atualizações)
+        let scrollTimeout;
+        track.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                updateIndexByScroll();
+            }, 80);
+        }, { passive: true });
+
+        // botões
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % total;
+            scrollToCard(currentIndex);
+            resetAutoAdvance();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + total) % total;
+            scrollToCard(currentIndex);
+            resetAutoAdvance();
+        });
+
+        // AUTO-ADVANCE: a cada 2s avança 1 card
+        let autoTimer;
+        const AUTO_MS = 2000;
+
+        function startAutoAdvance() {
+            stopAutoAdvance();
+            autoTimer = setInterval(() => {
+                currentIndex = (currentIndex + 1) % total;
+                scrollToCard(currentIndex);
+            }, AUTO_MS);
+        }
+        function stopAutoAdvance() { if (autoTimer) clearInterval(autoTimer); }
+
+        function resetAutoAdvance() {
+            stopAutoAdvance();
+            // reinicia após pequeno delay (para evitar reiniciar imediatamente se usuário clicou)
+            setTimeout(startAutoAdvance, 1200);
+        }
+
+        // pause on interaction (mouse/touch)
+        track.addEventListener('mouseenter', () => stopAutoAdvance());
+        track.addEventListener('mouseleave', () => startAutoAdvance());
+        track.addEventListener('touchstart', () => stopAutoAdvance(), { passive: true });
+        track.addEventListener('touchend', () => resetAutoAdvance(), { passive: true });
+
+        // inicia centralizando o primeiro item e o auto-advance
+        scrollToCard(currentIndex);
+        // pequena espera para garantir layout renderizado
+        setTimeout(startAutoAdvance, 600);
+
+        // Recalcula positions on resize (importante)
+        window.addEventListener('resize', () => {
+            // manter index atual e recentralizar
+            setTimeout(() => scrollToCard(currentIndex), 150);
+        });
+    });
+</script>
+
+ <script>
+        // Fake Database - Array de produtos
+// Fake Database - Array de produtos
+const fakeDatabase = [
+    {
+        id: 1,
+        title: "Computador Gamer Ryzen 5",
+        originalPrice: "Kz 550,000.00",
+        discount: "20%",
+        currentPrice: "Kz 440,000.00",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "computadores"
+    },
+    {
+        id: 2,
+        title: "Laptop Dell Inspiron 15",
+        originalPrice: "Kz 450,000.00",
+        discount: "15%",
+        currentPrice: "Kz 382,500.00",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "laptops"
+    },
+    {
+        id: 3,
+        title: "PC Workstation Intel i7",
+        originalPrice: "Kz 680,000.00",
+        discount: "10%",
+        currentPrice: "Kz 612,000.00",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "computadores"
+    },
+    {
+        id: 4,
+        title: "Mini PC Dell Optiplex",
+        originalPrice: "Kz 320,000.00",
+        discount: "12%",
+        currentPrice: "Kz 281,600.00",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "computadores"
+    },
+    {
+        id: 5,
+        title: "MacBook Pro M1",
+        originalPrice: "Kz 850,000.00",
+        discount: "8%",
+        currentPrice: "Kz 782,000.00",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "laptops"
+    },
+    {
+        id: 6,
+        title: "PC Gamer Intel i5",
+        originalPrice: "Kz 480,000.00",
+        discount: "18%",
+        currentPrice: "Kz 393,600.00",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "computadores"
+    },
+    {
+        id: 7,
+        title: "Monitor Dell 24''",
+        originalPrice: "Kz 180,000.00",
+        discount: "5%",
+        currentPrice: "Kz 171,000.00",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "periféricos"
+    },
+    {
+        id: 8,
+        title: "Teclado Mecânico RGB",
+        originalPrice: "Kz 45,000.00",
+        discount: "25%",
+        currentPrice: "Kz 33,750.00",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        category: "periféricos"
+    }
+];
+
+// Elementos do DOM
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+let resultsContainer;
+
+// Verificar se o container de resultados já existe, se não, criar
+function ensureResultsContainer() {
+    if (!document.getElementById('search-results-container')) {
+        // Criar container para os resultados
+        resultsContainer = document.createElement('div');
+        resultsContainer.id = 'search-results-container';
+        resultsContainer.style.cssText = `
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        `;
+        
+        // Inserir após o header
+        const header = document.querySelector('header');
+        header.parentNode.insertBefore(resultsContainer, header.nextSibling);
+    } else {
+        resultsContainer = document.getElementById('search-results-container');
+    }
+}
+
+// Função para criar estrelas de avaliação
+function createRatingStars(rating) {
+    let stars = '';
+    for (let i = 1; i <= 5; i++) {
+        if (i <= rating) {
+            stars += '<i class="fas fa-star"></i>';
+        } else {
+            stars += '<i class="far fa-star"></i>';
+        }
+    }
+    return stars;
+}
+
+// Função para ocultar todo o conteúdo exceto o header
+function hideMainContent() {
+    const mainContent = document.querySelectorAll('body > *:not(header)');
+    mainContent.forEach(element => {
+        if (element.id !== 'search-results-container') {
+            element.style.display = 'none';
+        }
+    });
+}
+
+// Função para mostrar o conteúdo principal novamente
+function showMainContent() {
+    const mainContent = document.querySelectorAll('body > *:not(header)');
+    mainContent.forEach(element => {
+        if (element.id !== 'search-results-container') {
+            element.style.display = '';
+        }
+    });
+}
+
+// Função para renderizar produtos nos resultados
+function renderProducts(products) {
+    ensureResultsContainer();
+    
+    if (products.length === 0) {
+        resultsContainer.innerHTML = `
+            <div style="text-align: center; padding: 60px 20px;">
+                <h2 style="color: #666; margin-bottom: 20px;">Nenhum produto encontrado</h2>
+                <p style="color: #888;">Tente usar outros termos de busca como "Dell", "Gamer", "Ryzen", etc.</p>
+            </div>
+        `;
+        return;
+    }
+    
+    let productsGrid = `
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+    `;
+    
+    products.forEach(product => {
+        productsGrid += `
+        <div style="margin-top: 80px;">
+            <div class="card">
+                <img src="${product.image}" alt="${product.title}" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <div style="font-size: 18px; font-weight: 600; margin-bottom: 10px; color: #1a2a6c;">${product.title}</div>
+                    <div style="color: #FFD700; margin-bottom: 10px;">${createRatingStars(product.rating)}</div>
+                    <div class="preco-antigo">${product.originalPrice}</div>
+                    <div class="desconto">${product.discount}</div>
+                    <div class="preco">${product.currentPrice}</div>
+                    <a href="#" class="detalhes">Ver detalhes</a>
+                </div>
+            </div>
+        </div>
+        `;
+    });
+    
+    productsGrid += '</div>';
+    resultsContainer.innerHTML = productsGrid;
+}
+
+// Função de busca
+function searchProducts(searchTerm) {
+    const term = searchTerm.toLowerCase().trim();
+    
+    if (term === '') {
+        // Se a busca estiver vazia, mostrar conteúdo principal
+        showMainContent();
+        if (resultsContainer) {
+            resultsContainer.style.display = 'none';
+        }
+        return;
+    }
+    
+    // Ocultar conteúdo principal e mostrar resultados
+    hideMainContent();
+    if (resultsContainer) {
+        resultsContainer.style.display = 'block';
+    }
+    
+    return fakeDatabase.filter(product => 
+        product.title.toLowerCase().includes(term)
+    );
+}
+
+// Função para executar a busca
+function performSearch() {
+    const searchTerm = searchInput.value;
+    const filteredProducts = searchProducts(searchTerm);
+    
+    if (searchTerm !== '') {
+        renderProducts(filteredProducts);
+    }
+}
+
+// Função para limpar a busca
+function clearSearch() {
+    searchInput.value = '';
+    showMainContent();
+    if (resultsContainer) {
+        resultsContainer.style.display = 'none';
+    }
+}
+
+// Event Listeners
+searchButton.addEventListener('click', performSearch);
+
+searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        performSearch();
+    }
+});
+
+// Busca em tempo real com debounce
+searchInput.addEventListener('input', (e) => {
+    clearTimeout(searchInput.timeout);
+    searchInput.timeout = setTimeout(performSearch, 500);
+});
+
+// Adicionar botão de limpar busca (opcional)
+function addClearButton() {
+    const clearButton = document.createElement('button');
+    clearButton.innerHTML = '<i class="fas fa-times"></i>';
+    clearButton.style.cssText = `
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: #888;
+        cursor: pointer;
+        font-size: 16px;
+        display: none;
+    `;
+    
+    clearButton.addEventListener('click', clearSearch);
+    
+    const searchBox = document.querySelector('.search-box');
+    searchBox.style.position = 'relative';
+    searchBox.appendChild(clearButton);
+    
+    // Mostrar/ocultar botão de limpar baseado no conteúdo do input
+    searchInput.addEventListener('input', function() {
+        clearButton.style.display = this.value ? 'block' : 'none';
+    });
+}
+
+// Inicializar botão de limpar (opcional)
+// addClearButton();
+    </script>
+
+<script>
+
+    // ===== BOTÃO MENU HAMBURGER =====
+    const menuBtn = document.getElementById("menuBtn");
+    const sidebar = document.getElementById("sidebar");
+
+    // 👉 Abre e fecha sidebar
+    menuBtn.addEventListener("click", (event) => {
+        event.stopPropagation();   // evita conflito com o clique fora
+        sidebar.classList.toggle("active");
+    });
+
+    // 👉 Fechar clicando fora
+    document.addEventListener("click", (event) => {
+        if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+            sidebar.classList.remove("active");
+        }
+    });
+
+    // ===== SCROLL SUAVE =====
+    document.querySelectorAll("#sidebar a").forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const target = this.getAttribute("data-scroll");
+            let element = null;
+
+            if (target === "topo") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                sidebar.classList.remove("active");
+                return;
+            }
+
+            if (target === "produtos") {
+                element = document.getElementById("produtos");
+            }
+
+            if (target === "footer") {
+                element = document.querySelector("footer");
+            }
+
+            if (element) {
+                const offset = element.offsetTop + 1;
+                window.scrollTo({
+                    top: offset,
+                    behavior: "smooth"
+                });
+            }
+
+            sidebar.classList.remove("active");
+        });
+    });
+</script>
+
+</body>
+
+</html>
